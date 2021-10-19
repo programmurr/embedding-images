@@ -3,23 +3,52 @@
   <head>
     <meta charset="UTF-8" />
     <title>Embedding Images and Video</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto&display=swap"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="assets/stylesheets/reset.css" />
     <link rel="stylesheet" href="assets/stylesheets/style.css" />
   </head>
   <body>
     <nav id="nav-bar">
       <section id="navigation">
-        <p>Hamburger</p>
-        <p>Youtube Logo</p>
+        <img
+          id="hamburger-menu"
+          src="./assets/images/icons/menu.png"
+          alt="Menu Icon"
+        />
+        <img
+          id="youtube-logo"
+          src="./assets/images/icons/youtube-logo.png"
+          alt="Youtube Logo"
+        />
       </section>
       <section id="search">
-        <p>Search input</p>
-        <p>Search icon</p>
+        <div id="search-wrapper">
+          <input
+            placeholder="Search"
+            type="search"
+            name="search-bar"
+            id="search-bar"
+          />
+          <img
+            id="search-icon"
+            src="./assets/images/icons/magnify.png"
+            alt="Search Icon"
+          />
+        </div>
       </section>
       <section id="account-actions">
-        <p>Camera logo</p>
-        <p>Grid Logo</p>
-        <p>Account picture</p>
+        <img src="./assets/images/icons/video-plus.png" alt="Record Icon" />
+        <img src="./assets/images/icons/apps.png" alt="Apps Icon" />
+        <img
+          src="./assets/images/profiles/user-photo.jpg"
+          alt="User Profile Image"
+          id="user-profile-image"
+        />
       </section>
     </nav>
     <section id="content">
@@ -33,48 +62,50 @@
         </section>
         <!-- Multiple recommendations -->
       </aside>
-      <div id="video-player">
-        <p>Video goes here</p>
-      </div>
-      <section id="video-info">
-        <section id="video-data">
-          <section id="descriptive-data">
-            <p>Title</p>
-            <p>Views</p>
-            <p>Time</p>
+      <section id="video">
+        <div id="video-player">
+          <p>Video goes here</p>
+        </div>
+        <section id="video-info">
+          <section id="video-data">
+            <section id="descriptive-data">
+              <p>Title</p>
+              <p>Views</p>
+              <p>Time</p>
+            </section>
+            <section id="social-data">
+              <p>Likes</p>
+              <p>Dislikes</p>
+              <p>Share</p>
+              <p>Save</p>
+            </section>
           </section>
-          <section id="social-data">
-            <p>Likes</p>
-            <p>Dislikes</p>
-            <p>Share</p>
-            <p>Save</p>
+          <!-- Divider line -->
+          <section id="video-description">
+            <section id="broadcaster-info">
+              <p>Logo</p>
+              <p>Name</p>
+              <p>No. subscribers</p>
+            </section>
+            <div class="subscribe-container">
+              <p>Subscribe button</p>
+            </div>
+            <p>Video description text</p>
+            <p>Show more link</p>
+            <!-- Divider line -->
           </section>
+        </section>
+      </section>
+      <section id="comments-container">
+        <section id="comments-info">
+          <p>Number of comments</p>
+          <p>Sort by</p>
+        </section>
+        <section id="add-comment">
+          <p>User logo</p>
+          <p>Add a comment input</p>
         </section>
         <!-- Divider line -->
-        <section id="video-description">
-          <section id="broadcaster-info">
-            <p>Logo</p>
-            <p>Name</p>
-            <p>No. subscribers</p>
-          </section>
-          <div class="subscribe-container">
-            <p>Subscribe button</p>
-          </div>
-          <p>Video description text</p>
-          <p>Show more link</p>
-          <!-- Divider line -->
-        </section>
-        <section id="comments-container">
-          <section id="comments-info">
-            <p>Number of comments</p>
-            <p>Sort by</p>
-          </section>
-          <section id="add-comment">
-            <p>User logo</p>
-            <p>Add a comment input</p>
-          </section>
-          <!-- Divider line -->
-        </section>
         <section id="comments">
           <section class="individual-comment" id="comment-1">
             <section class="author-info">
