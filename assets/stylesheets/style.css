@@ -103,6 +103,16 @@ nav {
 
 #content {
   background-color: lightgreen;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+#content-wrapper {
+  height: 100%;
+  width: 95%;
+  max-width: 900px;
 }
 
 /* 
@@ -113,6 +123,9 @@ nav {
 
 aside {
   background-color: lightcoral;
+  float: right;
+  height: 100%;
+  width: 22%;
 }
 
 /* 
@@ -123,6 +136,10 @@ aside {
 
 #video {
   background-color: lightpink;
+}
+
+iframe {
+  width: 78%;
 }
 
 /* 
