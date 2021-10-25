@@ -1,5 +1,14 @@
 /* 
   ==============================
+  VARIABLES
+  ==============================
+*/
+:root {
+  --yt-bg-black: #151515;
+}
+
+/* 
+  ==============================
   GLOBAL STYLES
   ==============================
 */
@@ -16,6 +25,7 @@ body {
 body {
   font-family: Roboto, sans-serif;
   color: white;
+  background-color: var(--yt-bg-black);
 }
 
 img {
@@ -24,6 +34,10 @@ img {
 
 img:hover {
   cursor: pointer;
+}
+
+b {
+  font-weight: bold;
 }
 
 /* 
@@ -102,17 +116,18 @@ nav {
 */
 
 #content {
-  background-color: lightgreen;
+  background-color: var(--yt-bg-black);
   height: 100%;
   width: 100%;
   display: flex;
   justify-content: center;
+  margin-top: 1%;
 }
 
 #content-wrapper {
   height: 100%;
   width: 95%;
-  max-width: 900px;
+  max-width: 1500px;
 }
 
 /* 
@@ -122,10 +137,38 @@ nav {
 */
 
 aside {
-  background-color: lightcoral;
+  background-color: var(--yt-bg-black);
   float: right;
   height: 100%;
   width: 22%;
+}
+
+.single-recommendation {
+  width: 100%;
+  height: 15%;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.recommendation-image {
+  height: 80%;
+}
+
+.recommendation-info {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: space-evenly;
+}
+
+.recommendation-info > p {
+  font-size: 0.8rem;
+}
+
+.recommendation-title {
+  font-size: 1rem;
 }
 
 /* 
@@ -135,19 +178,125 @@ aside {
 */
 
 #video {
-  background-color: lightpink;
+  background-color: var(--yt-bg-black);
+  min-height: 500px;
+  width: 78%;
+  height: 100%;
 }
 
 iframe {
-  width: 78%;
+  width: 100%;
+  height: 66%;
 }
 
-/* 
-  ==============================
-  CONTENT - COMMENTS AREA
-  ==============================
-*/
+#video-info {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
 
-#comments-container {
-  background-color: lightslategray;
+#video-data {
+  height: 10%;
+  display: flex;
+  justify-content: space-between;
+  padding-bottom: 10px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.315);
+}
+
+#descriptive-data {
+  width: 45%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+#descriptive-title {
+  font-size: 1.25rem;
+}
+
+#descriptive-numbers {
+  font-size: 0.9rem;
+}
+
+#social-data {
+  width: 40%;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: flex-end;
+  font-size: 0.9rem;
+}
+
+.likes,
+.dislikes,
+.share,
+.save,
+.more-actions {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#video-description {
+  padding-top: 10px;
+  width: 100%;
+}
+
+#broadcaster-info {
+  display: flex;
+  justify-content: space-between;
+}
+
+.info-container {
+  width: 40%;
+  display: flex;
+}
+
+.info-container > img {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+}
+
+.info-container-text {
+  width: auto;
+  margin-left: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  font-size: 0.8rem;
+}
+
+.subscribe-container {
+  width: 40%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#subscribe-button {
+  background-color: red;
+  border: none;
+  color: white;
+  padding: 10px;
+  border-radius: 2px;
+  font-weight: 500;
+}
+
+#subscribe-button:hover {
+  cursor: pointer;
+}
+
+#main-description-text {
+  margin-top: 10px;
+  font-size: 0.9rem;
+}
+
+#show-more-trigger {
+  font-size: 0.9rem;
+  text-align: center;
+}
+
+#show-more-trigger:hover {
+  cursor: pointer;
 }
